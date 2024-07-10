@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Counter</h1>
+    <p id="display">0</p>
+    <button onclick="decrease()">Decrease</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="increase()">Increase</button>
+
+
+    <script>
+        var clicks = 0;
+        function increase(){
+            clicks += 1;
+            document.getElementById("display").innerHTML = clicks;
+        }
+
+        function decrease(){
+            clicks -= 1;
+            document.getElementById("display").innerHTML = clicks;
+        }
+
+        function reset(){
+            clicks = 0;
+            document.getElementById("display").innerHTML = clicks;
+        }
+    </script>
+</body>
+
+</html>
